@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "allowJs": false,
+    "noEmit": true,
+    "incremental": true,
+    "composite": true,
+    "noEmitOnError": false,
+    "types": ["node", "react", "react-dom"]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "references": [{ "path": "../../packages/types" }]
+}

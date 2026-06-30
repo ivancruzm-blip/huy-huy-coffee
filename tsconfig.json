@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"],
+  "references": [
+    { "path": "apps/web" },
+    { "path": "apps/admin" },
+    { "path": "packages/ui" },
+    { "path": "packages/design-tokens" },
+    { "path": "packages/content" },
+    { "path": "packages/hooks" },
+    { "path": "packages/utils" },
+    { "path": "packages/icons" },
+    { "path": "packages/animations" },
+    { "path": "packages/config" },
+    { "path": "packages/types" },
+    { "path": "packages/knowledge" }
+  ]
+}
