@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CoffeeVarieties } from "../components/CoffeeVarieties";
 import { Header } from "../components/Header";
 import { Story } from "../components/Story";
 import { TrustBar } from "../components/TrustBar";
@@ -51,6 +52,7 @@ export default function HomePage() {
       </section>
       <TrustBar />
       <Story />
+      <CoffeeVarieties />
       </main>
     </>
   );
