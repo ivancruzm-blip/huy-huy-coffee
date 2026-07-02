@@ -1,7 +1,13 @@
 import Image from "next/image";
+import { Header } from "../components/Header";
+import { Story } from "../components/Story";
+import { TrustBar } from "../components/TrustBar";
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#F8F6F2]">
+    <>
+      <Header />
+      <main className="min-h-screen bg-[#F8F6F2]">
       <section className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center gap-12 px-8 py-20 lg:flex-row">
         <div className="flex-1">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
@@ -33,15 +39,19 @@ export default function HomePage() {
 
         <div className="flex flex-1 justify-center">
           <div className="relative h-[550px] w-[420px] overflow-hidden rounded-[32px] shadow-2xl">
-  <Image
-  src="/images/hero-coffee.jpg"
-  fill
-  className="object-cover"
-  priority
-/>
-</div>
+            <Image
+              src="/images/hero-coffee.jpg"
+              alt="Café de especialidad Huy Huy"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </section>
-    </main>
+      <TrustBar />
+      <Story />
+      </main>
+    </>
   );
 }
